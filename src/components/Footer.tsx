@@ -11,7 +11,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <h3 className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              MacBook Pro
+              Mac Corner
             </h3>
             <p className="text-white/80 leading-relaxed">
               Platform terpercaya untuk jual beli MacBook di Indonesia. 
@@ -49,12 +49,12 @@ const Footer = () => {
               <li className="flex items-start space-x-2">
                 <MapPin className="h-4 w-4 mt-1 text-white/60" />
                 <span className="text-white/80 text-sm">
-                  Jl. Sudirman No. 123, Jakarta Pusat 10110
+                  Jl. Layar Raya 2A Kelapa Dua, Karawaci Tangerang
                 </span>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-white/60" />
-                <span className="text-white/80">(021) 1234-5678</span>
+                <span className="text-white/80">(021) </span>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-white/60" />
@@ -90,7 +90,7 @@ const Footer = () => {
         <div className="border-t border-white/20 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-white/60 text-sm">
-              © {currentYear} MacBook Pro Indonesia. All rights reserved.
+              © {currentYear} MacBook Corner Indonesia. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-white/60 hover:text-white transition-colors">Privacy Policy</a>
