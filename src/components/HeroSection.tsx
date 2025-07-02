@@ -39,7 +39,7 @@ const HeroSection = () => {
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="border-white text-white hover:bg-white/10"
+                className="bg-white text-primary hover:bg-white/90"
                 onClick={() => scrollToSection('services')}
               >
                 Lihat Layanan
