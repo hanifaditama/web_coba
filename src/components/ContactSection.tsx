@@ -84,24 +84,6 @@ const ContactSection = () => {
           </p>
         </div>
 
-        {/* Contact Information */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          {contactInfo.map((info, index) => (
-            <Card key={index} className="text-center hover:shadow-medium transition-all duration-300 group">
-              <CardHeader>
-                <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <info.icon className="h-8 w-8 text-white" />
-                </div>
-                <CardTitle className="text-lg">{info.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="font-semibold text-primary mb-2">{info.content}</p>
-                <p className="text-sm text-muted-foreground">{info.description}</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-
         {/* CTA Section */}
         <Card className="bg-gradient-hero text-white shadow-large">
           <CardContent className="p-8 text-center">
