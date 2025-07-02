@@ -14,7 +14,7 @@ const Footer = () => {
               MacBook Pro
             </h3>
             <p className="text-white/80 leading-relaxed">
-              Platform terpercaya untuk jual beli MacBook di Indonesia sejak 2016. 
+              Platform terpercaya untuk jual beli MacBook di Indonesia. 
               Melayani dengan standar profesional dan kepuasan pelanggan.
             </p>
             <div className="flex space-x-3">

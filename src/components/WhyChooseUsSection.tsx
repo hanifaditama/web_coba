@@ -63,10 +63,6 @@ const WhyChooseUsSection = () => {
       title: "After Sales Support",
       description: "Konsultasi gratis bahkan setelah transaksi selesai"
     },
-    {
-      title: "Legal & Licensed",
-      description: "Toko resmi dengan ijin lengkap dan sistem perpajakan yang benar"
-    }
   ];
 
   return (
@@ -91,7 +87,7 @@ const WhyChooseUsSection = () => {
           <div className="space-y-6">
             <h3 className="text-2xl font-bold">Komitmen Kami untuk Kepuasan Anda</h3>
             <p className="text-muted-foreground">
-              Sejak 2016, kami telah menjadi pilihan utama untuk jual beli MacBook di Indonesia. 
+              Kami telah menjadi pilihan utama untuk jual beli MacBook di Indonesia. 
               Dengan pendekatan yang customer-centric, kami memastikan setiap transaksi memberikan 
               value terbaik untuk kedua belah pihak.
             </p>

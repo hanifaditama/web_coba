@@ -17,8 +17,8 @@ const FAQSection = () => {
       answer: "Tentu saja! Kami memberikan harga berdasarkan evaluasi fair, namun masih bisa dinegosiasi dalam batas wajar. Harga final akan bergantung pada kondisi MacBook, kelengkapan, dan kondisi pasar saat itu."
     },
     {
-      question: "Bagaimana cara mengetahui estimasi harga MacBook saya?",
-      answer: "Anda bisa menghubungi kami melalui WhatsApp dengan menyebutkan model MacBook, tahun, spesifikasi, dan kondisi umum. Tim kami akan memberikan estimasi harga awal. Untuk harga pasti, diperlukan evaluasi langsung."
+      question: "Bagaimana cara mengetahui harga MacBook saya?",
+      answer: "Anda bisa menghubungi kami melalui WhatsApp dengan menyebutkan model MacBook, tahun, spesifikasi, dan kondisi umum. Tim kami akan memberikan harga awal. Untuk harga pasti, diperlukan evaluasi langsung."
     },
     {
       question: "Apakah MacBook tanpa charger masih bisa dijual?",

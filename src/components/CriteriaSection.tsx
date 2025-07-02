@@ -63,7 +63,7 @@ const CriteriaSection = () => {
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold">Kriteria MacBook</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Ketahui kriteria MacBook yang kami terima dan estimasi harga pasar
+            Ketahui kriteria MacBook yang kami terima
           </p>
         </div>
 
@@ -130,41 +130,6 @@ const CriteriaSection = () => {
           </Card>
         </div>
 
-        {/* Estimasi Harga */}
-        <Card className="shadow-medium">
-          <CardHeader>
-            <CardTitle className="text-center">Estimasi Harga MacBook</CardTitle>
-            <p className="text-center text-muted-foreground">
-              *Harga dapat berubah tergantung kondisi, spesifikasi, dan kondisi pasar
-            </p>
-          </CardHeader>
-          <CardContent>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {macbookModels.map((model, index) => (
-                <div key={index} className="p-4 border rounded-lg hover:shadow-soft transition-shadow">
-                  <h4 className="font-semibold mb-2">{model.name}</h4>
-                  <p className="text-primary font-bold text-lg mb-2">{model.price}</p>
-                  <Badge 
-                    variant={
-                      model.condition === "Sangat diminati" ? "default" :
-                      model.condition === "Diminati" ? "secondary" :
-                      "outline"
-                    }
-                    className="text-xs"
-                  >
-                    {model.condition}
-                  </Badge>
-                </div>
-              ))}
-            </div>
-            
-            <div className="mt-6 text-center">
-              <p className="text-sm text-muted-foreground mb-4">
-                Ingin mengetahui harga pasti MacBook Anda? Hubungi kami untuk evaluasi gratis!
-              </p>
-            </div>
-          </CardContent>
-        </Card>
       </div>
     </section>
   );

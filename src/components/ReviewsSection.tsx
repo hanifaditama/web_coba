@@ -58,7 +58,7 @@ const ReviewsSection = () => {
     { number: "4.9", label: "Rating Rata-rata", sublabel: "dari 5 bintang" },
     { number: "1,500+", label: "Review Positif", sublabel: "dalam 2 tahun terakhir" },
     { number: "98%", label: "Recommend Rate", sublabel: "akan merekomendasikan" },
-    { number: "5,000+", label: "Happy Customers", sublabel: "sejak 2016" }
+    { number: "5,000+", label: "Happy Customers", sublabel: "pelanggan puas" }
   ];
 
   return (

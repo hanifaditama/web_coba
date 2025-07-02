@@ -79,39 +79,8 @@ const ContactSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold">Hubungi Kami</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Siap melayani Anda dengan berbagai cara komunikasi yang mudah dan nyaman
-          </p>
         </div>
 
-        {/* CTA Section */}
-        <Card className="bg-gradient-hero text-white shadow-large">
-          <CardContent className="p-8 text-center">
-            <h3 className="text-2xl font-bold mb-4">Siap untuk Menjual MacBook Anda?</h3>
-            <p className="text-white/90 mb-6 max-w-2xl mx-auto">
-              Dapatkan evaluasi gratis dan penawaran harga terbaik untuk MacBook Anda. 
-              Tim profesional kami siap membantu Anda!
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
-                href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20jual%20MacBook" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-8 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
-              >
-                <MessageCircle className="h-5 w-5 mr-2" />
-                WhatsApp Sekarang
-              </a>
-              <a 
-                href="tel:02112345678"
-                className="inline-flex items-center justify-center px-8 py-3 bg-white text-primary rounded-lg hover:bg-white/90 transition-colors"
-              >
-                <Phone className="h-5 w-5 mr-2" />
-                Telepon Langsung
-              </a>
-            </div>
-          </CardContent>
-        </Card>
       </div>
     </section>
   );
