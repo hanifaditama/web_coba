@@ -48,15 +48,6 @@ const CriteriaSection = () => {
     "Model di bawah tahun 2015 (case by case)"
   ];
 
-  const macbookModels = [
-    { name: "MacBook Air M1/M2/M3", price: "Rp 12-25 juta", condition: "Sangat diminati" },
-    { name: "MacBook Pro M1/M2/M3", price: "Rp 15-35 juta", condition: "Sangat diminati" },
-    { name: "MacBook Pro Intel 2019-2021", price: "Rp 8-20 juta", condition: "Diminati" },
-    { name: "MacBook Air Intel 2018-2020", price: "Rp 6-15 juta", condition: "Diminati" },
-    { name: "MacBook Pro 2016-2018", price: "Rp 5-12 juta", condition: "Kondisional" },
-    { name: "MacBook 2015-2017", price: "Rp 3-8 juta", condition: "Case by case" }
-  ];
-
   return (
     <section id="criteria" className="py-20 bg-muted/50">
       <div className="container mx-auto px-4">

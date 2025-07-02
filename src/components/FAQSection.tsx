@@ -93,18 +93,20 @@ const FAQSection = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a 
-                    href="https://wa.me/6281234567890" 
+                    href="https://wa.me/628988030869" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
                   >
-                    WhatsApp: 0812-3456-7890
+                    WhatsApp: Admin 1
                   </a>
                   <a 
-                    href="tel:02112345678"
-                    className="inline-flex items-center justify-center px-6 py-3 border border-border rounded-lg hover:bg-muted transition-colors"
+                    href="https://wa.me/6285727800711" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
                   >
-                    Telepon: (021) 1234-5678
+                    WhatsApp: Admin 2
                   </a>
                 </div>
               </CardContent>
