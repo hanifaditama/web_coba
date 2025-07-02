@@ -19,7 +19,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-4">
             <h1 className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              MacBook Pro
+              Mac Corner
             </h1>
             <span className="text-sm text-muted-foreground hidden sm:block">
               Jual Beli MacBook Terpercaya
