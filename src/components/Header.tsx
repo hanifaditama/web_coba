@@ -67,8 +67,6 @@ const Header = () => {
 
           <div className="hidden md:flex items-center space-x-4">
             <div className="flex items-center space-x-2 text-sm text-muted-foreground">
-              <Phone className="h-4 w-4" />
-              <span>0812-3456-7890</span>
             </div>
             <Button onClick={() => scrollToSection('contact')} variant="default">
               Jual Sekarang
