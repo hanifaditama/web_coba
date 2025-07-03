@@ -58,7 +58,7 @@ const Header = () => {
               FAQ
             </button>
             <button 
-              onClick={() => scrollToSection('contact')}
+              onClick={() => scrollToSection('contact-section')}
               className="text-foreground hover:text-primary transition-colors"
             >
               Kontak

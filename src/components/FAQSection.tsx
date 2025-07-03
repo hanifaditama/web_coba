@@ -84,7 +84,7 @@ const FAQSection = () => {
             </CardContent>
           </Card>
 
-          <div className="mt-12 text-center">
+          <div id="contact-section"className="mt-12 text-center">
             <Card className="bg-gradient-card">
               <CardContent className="p-8">
                 <h3 className="text-xl font-bold mb-4">Masih Ada Pertanyaan?</h3>

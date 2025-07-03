@@ -9,7 +9,7 @@ const HowToSellSection = () => {
       number: "01",
       title: "Hubungi Kami",
       description: "Hubungi kami melalui WhatsApp, telepon, atau datang langsung ke toko",
-      details: ["Via WhatsApp: 0812-3456-7890", "Telepon: (021) 1234-5678", "Kunjungi toko fisik kami"]
+      details: ["Via WhatsApp: 085-727-800-711", "Kunjungi toko kami"]
     },
     {
       icon: Search,
