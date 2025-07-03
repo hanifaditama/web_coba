@@ -120,13 +120,6 @@ const Header = () => {
               >
                 Kontak
               </button>
-              <div className="pt-4 border-t">
-                <Button onClick={() => scrollToSection('contact-section')} variant="default">
-                  Jual Sekarang
-                </Button>
-
-
-              </div>
             </nav>
           </div>
         )}
