@@ -89,7 +89,7 @@ const HeroSection = () => {
                   ))}
                 </div>
                 <div className="text-sm font-semibold">5.0</div>
-                <div className="text-xs">1,000+ Review</div>
+                <div className="text-xs">1,500+ Review</div>
               </div>
             </div>
           </div>

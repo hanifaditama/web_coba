@@ -91,7 +91,7 @@ const HowToSellSection = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 size="lg" 
-                onClick={() => scrollToSection('contact')}
+                onClick={() => scrollToSection('contact-section')}
                 className="min-w-[200px]"
               >
                 Hubungi Sekarang
