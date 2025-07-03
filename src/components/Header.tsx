@@ -121,7 +121,12 @@ const Header = () => {
                 Kontak
               </button>
               <div className="pt-4 border-t">
-                <Button onClick={() => scrollToSection('contact')} className="w-full">
+                <a 
+                    href="https://wa.me/6285727800711" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-2 text-sm text-muted-foreground"> 
+                    </a>
                   Jual Sekarang
                 </Button>
               </div>
