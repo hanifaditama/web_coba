@@ -68,7 +68,7 @@ const Header = () => {
           <div className="hidden md:flex items-center space-x-4">
             <div className="flex items-center space-x-2 text-sm text-muted-foreground">
             </div>
-            <Button onClick={() => scrollToSection('contact')} variant="default">
+            <Button onClick={() => scrollToSection('contact-section')} variant="default">
               Jual Sekarang
             </Button>
           </div>
