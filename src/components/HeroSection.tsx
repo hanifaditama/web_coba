@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CheckCircle, Star, Shield, Clock } from "lucide-react";
-import heroImage from "@/assets/hero-macbook.jpg";
+import heroImage from "@/assets/mac-bg.png";
 
 const HeroSection = () => {
   const scrollToSection = (id: string) => {
