@@ -215,7 +215,7 @@ const ArticleDetail = () => {
             </p>
             
             <ul className="list-disc pl-6 mb-6 space-y-2">
-              <li>Enable "Low Power Mode" in System Preferences > Battery</li>
+              <li>Enable "Low Power Mode" in System Preferences &gt; Battery</li>
               <li>Turn off keyboard backlighting when not needed</li>
               <li>Disable features like Handoff and AirDrop when not in use</li>
               <li>Manage Bluetooth devices (disconnect when not in use)</li>
