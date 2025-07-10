@@ -18,9 +18,11 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-4">
-            <h1 className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              Mac Corner
-            </h1>
+            <a href="/" className="cursor-pointer">
+              <h1 className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+                Mac Corner
+              </h1>
+            </a>
             <span className="text-sm text-muted-foreground hidden sm:block">
               Jual Beli MacBook Terpercaya
             </span>
@@ -50,6 +52,12 @@ const Header = () => {
               className="text-foreground hover:text-primary transition-colors"
             >
               Review
+            </button>
+            <button 
+              onClick={() => scrollToSection('blog-section')}
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              Article
             </button>
             <button 
               onClick={() => scrollToSection('faq')}
@@ -107,6 +115,12 @@ const Header = () => {
                 className="text-left text-foreground hover:text-primary transition-colors"
               >
                 Review
+              </button>
+              <button 
+                onClick={() => scrollToSection('blog-section')}
+                className="text-left text-foreground hover:text-primary transition-colors"
+              >
+                Article
               </button>
               <button 
                 onClick={() => scrollToSection('faq')}

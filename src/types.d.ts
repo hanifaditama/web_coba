@@ -49,6 +49,10 @@ declare module 'lucide-react' {
   export const ChevronLeft: Icon;
   export const ChevronRight: Icon;
   export const ArrowLeft: Icon;
+  export const Menu: Icon;
+  export const X: Icon;
+  export const Phone: Icon;
+  export const Mail: Icon;
 }
 
 declare module '@tanstack/react-query' {
