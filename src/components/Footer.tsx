@@ -4,6 +4,23 @@ import { MapPin, Phone, Mail, Clock, Instagram, Facebook, Youtube } from "lucide
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
+  // Function to handle navigation to sections
+  const navigateToSection = (id: string) => {
+    // Check if we're on the index page
+    const isIndexPage = window.location.pathname === "/";
+    
+    if (isIndexPage) {
+      // If we're on the index page, scroll to the section
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // If we're on another page, navigate to the index page with the section hash
+      window.location.href = `/#${id}`;
+    }
+  };
+
   return (
     <footer className="bg-macbook-gray text-white">
       <div className="container mx-auto px-4 py-12">
@@ -34,11 +51,46 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Quick Links</h4>
             <ul className="space-y-2">
-              <li><a href="#services" className="text-white/80 hover:text-white transition-colors">Layanan</a></li>
-              <li><a href="#how-to-sell" className="text-white/80 hover:text-white transition-colors">Cara Jual</a></li>
-              <li><a href="#criteria" className="text-white/80 hover:text-white transition-colors">Kriteria MacBook</a></li>
-              <li><a href="#reviews" className="text-white/80 hover:text-white transition-colors">Review</a></li>
-              <li><a href="#faq" className="text-white/80 hover:text-white transition-colors">FAQ</a></li>
+              <li>
+                <button 
+                  onClick={() => navigateToSection('services')} 
+                  className="text-white/80 hover:text-white transition-colors"
+                >
+                  Layanan
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => navigateToSection('how-to-sell')} 
+                  className="text-white/80 hover:text-white transition-colors"
+                >
+                  Cara Jual
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => navigateToSection('criteria')} 
+                  className="text-white/80 hover:text-white transition-colors"
+                >
+                  Kriteria MacBook
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => navigateToSection('reviews')} 
+                  className="text-white/80 hover:text-white transition-colors"
+                >
+                  Review
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => navigateToSection('faq')} 
+                  className="text-white/80 hover:text-white transition-colors"
+                >
+                  FAQ
+                </button>
+              </li>
             </ul>
           </div>
 

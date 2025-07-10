@@ -6,10 +6,19 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsMenuOpen(false);
+    // Check if we're on the index page
+    const isIndexPage = window.location.pathname === "/";
+    
+    if (isIndexPage) {
+      // If we're on the index page, scroll to the section
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+        setIsMenuOpen(false);
+      }
+    } else {
+      // If we're on another page, navigate to the index page with the section hash
+      window.location.href = `/#${id}`;
     }
   };
 
@@ -129,7 +138,7 @@ const Header = () => {
                 FAQ
               </button>
               <button 
-                onClick={() => scrollToSection('contact')}
+                onClick={() => scrollToSection('contact-section')}
                 className="text-left text-foreground hover:text-primary transition-colors"
               >
                 Kontak
