@@ -1,5 +1,12 @@
-import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import * as React from "react";
+const { useEffect } = React;
+
+// Mock implementation for useLocation
+const useLocation = () => {
+  return {
+    pathname: window.location.pathname
+  };
+};
 
 const NotFound = () => {
   const location = useLocation();

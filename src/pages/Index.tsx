@@ -5,8 +5,11 @@ import HowToSellSection from "@/components/HowToSellSection";
 import CriteriaSection from "@/components/CriteriaSection";
 import WhyChooseUsSection from "@/components/WhyChooseUsSection";
 import ReviewsSection from "@/components/ReviewsSection";
+import BlogSection from "@/components/BlogSection";
 import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
+
+import * as React from "react";
 
 const Index = () => {
   return (
@@ -18,6 +21,7 @@ const Index = () => {
       <CriteriaSection />
       <WhyChooseUsSection />
       <ReviewsSection />
+      <BlogSection />
       <FAQSection />
       <Footer />
     </div>
