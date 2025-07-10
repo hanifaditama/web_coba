@@ -63,7 +63,7 @@ const ArticleDetail = () => {
   // If article not found, redirect to 404
   useEffect(() => {
     if (!article) {
-      navigate("/not-found", { replace: true });
+      navigate("/not-found");
     }
   }, [article, navigate]);
   
@@ -73,6 +73,11 @@ const ArticleDetail = () => {
     month: 'long',
     day: 'numeric'
   }) : '';
+  
+  // Navigate back to articles
+  const goBackToArticles = () => {
+    window.location.href = "/articles";
+  };
   
   if (!article) return null; // Return null while redirecting
 
@@ -87,7 +92,7 @@ const ArticleDetail = () => {
               variant="ghost" 
               size="sm" 
               className="flex items-center gap-1"
-              onClick={() => navigate("/articles")}
+              onClick={goBackToArticles}
             >
               <ArrowLeft className="h-4 w-4" />
               Back to Articles
