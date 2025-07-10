@@ -6,6 +6,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Articles from "./pages/Articles";
 import ArticleDetail from "./pages/ArticleDetail";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 // Simple router implementation
 const Router = () => {
@@ -30,6 +31,7 @@ const App = () => (
     <Toaster />
     <Sonner />
     <Router />
+    <WhatsAppButton />
   </TooltipProvider>
 );
 
