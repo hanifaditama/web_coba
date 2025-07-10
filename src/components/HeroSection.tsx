@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { CheckCircleIcon, StarIcon, ClockIcon } from "lucide-react";
+import { CheckCircle, Star, Clock } from "lucide-react";
 import heroImage from "@/assets/mac-bg.png";
 
 const HeroSection = () => {
@@ -51,7 +51,7 @@ const HeroSection = () => {
               <div className="flex items-center p-4 bg-gray-50 rounded-lg border border-gray-100">
                 <div className="flex-shrink-0 mr-3">
                   <div className="bg-primary/10 rounded-full p-2">
-                    <CheckCircleIcon className="h-5 w-5 text-primary" />
+                    <CheckCircle className="h-5 w-5 text-primary" />
                   </div>
                 </div>
                 <div>
@@ -63,7 +63,7 @@ const HeroSection = () => {
               <div className="flex items-center p-4 bg-gray-50 rounded-lg border border-gray-100">
                 <div className="flex-shrink-0 mr-3">
                   <div className="bg-success/10 rounded-full p-2">
-                    <ClockIcon className="h-5 w-5 text-success" />
+                    <Clock className="h-5 w-5 text-success" />
                   </div>
                 </div>
                 <div>
@@ -86,7 +86,7 @@ const HeroSection = () => {
               <div className="text-center">
                 <div className="flex items-center justify-center space-x-1 mb-1">
                   {[...Array(5)].map((_, i) => (
-                    <StarIcon key={i} className="h-4 w-4 fill-accent text-accent" />
+                    <Star key={i} className="h-4 w-4 fill-accent text-accent" />
                   ))}
                 </div>
                 <div className="text-sm font-semibold text-gray-900">5.0</div>

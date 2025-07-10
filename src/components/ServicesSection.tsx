@@ -1,25 +1,25 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ShoppingCartIcon, WrenchIcon, ShieldIcon, TruckIcon, ClockIcon, CheckCircleIcon } from "lucide-react";
+import { ShoppingCart, Wrench, Shield, Truck, Clock, CheckCircle } from "lucide-react";
 
 const ServicesSection = () => {
   const services = [
     {
-      icon: ShoppingCartIcon,
+      icon: ShoppingCart,
       title: "Jual Beli MacBook",
       description: "Jual MacBook bekas Anda atau beli MacBook berkualitas dengan harga terbaik",
       features: ["Evaluasi harga fair", "Proses cepat", "Garansi kualitas"],
       color: "text-primary"
     },
     {
-      icon: WrenchIcon,
+      icon: Wrench,
       title: "Service & Repair",
       description: "Layanan perbaikan MacBook profesional dengan teknisi berpengalaman",
       features: ["Diagnosis gratis", "Spare part original", "Garansi service"],
       color: "text-success"
     },
     {
-      icon: ShieldIcon,
+      icon: Shield,
       title: "Trade In Program",
       description: "Tukar tambah MacBook lama Anda dengan model terbaru",
       features: ["Cashback maksimal", "Proses mudah", "Tanpa ribet"],
@@ -65,7 +65,7 @@ const ServicesSection = () => {
                 <ul className="space-y-3 mb-6">
                   {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center space-x-3">
-                      <CheckCircleIcon className="h-5 w-5 text-primary flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
                       <span className="text-gray-700">{feature}</span>
                     </li>
                   ))}
@@ -86,28 +86,28 @@ const ServicesSection = () => {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10">
             <div className="space-y-3 text-center">
               <div className="bg-primary/10 w-14 h-14 rounded-full flex items-center justify-center mx-auto">
-                <ClockIcon className="h-7 w-7 text-primary" />
+                <Clock className="h-7 w-7 text-primary" />
               </div>
               <h3 className="font-semibold text-gray-900">Same Day Service</h3>
               <p className="text-sm text-gray-600">Proses dalam hari yang sama</p>
             </div>
             <div className="space-y-3 text-center">
               <div className="bg-success/10 w-14 h-14 rounded-full flex items-center justify-center mx-auto">
-                <ShieldIcon className="h-7 w-7 text-success" />
+                <Shield className="h-7 w-7 text-success" />
               </div>
               <h3 className="font-semibold text-gray-900">100% Aman</h3>
               <p className="text-sm text-gray-600">Transaksi terjamin aman</p>
             </div>
             <div className="space-y-3 text-center">
               <div className="bg-accent/10 w-14 h-14 rounded-full flex items-center justify-center mx-auto">
-                <TruckIcon className="h-7 w-7 text-accent" />
+                <Truck className="h-7 w-7 text-accent" />
               </div>
               <h3 className="font-semibold text-gray-900">Pickup Gratis</h3>
               <p className="text-sm text-gray-600">Jemput ke lokasi Anda</p>
             </div>
             <div className="space-y-3 text-center">
               <div className="bg-primary/10 w-14 h-14 rounded-full flex items-center justify-center mx-auto">
-                <CheckCircleIcon className="h-7 w-7 text-primary" />
+                <CheckCircle className="h-7 w-7 text-primary" />
               </div>
               <h3 className="font-semibold text-gray-900">Garansi</h3>
               <p className="text-sm text-gray-600">Jaminan kualitas produk</p>

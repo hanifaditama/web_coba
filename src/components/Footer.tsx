@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Phone, Mail } from "lucide-react";
-import { MapIcon, ClockIcon, InstagramIcon, FacebookIcon, YoutubeIcon } from "lucide-react";
+import { Map, Clock, Instagram, Facebook, Youtube } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -37,13 +37,13 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <InstagramIcon className="h-5 w-5" />
+                <Instagram className="h-5 w-5" />
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <FacebookIcon className="h-5 w-5" />
+                <Facebook className="h-5 w-5" />
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <YoutubeIcon className="h-5 w-5" />
+                <Youtube className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -100,7 +100,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold text-white">Kontak</h4>
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
-                <MapIcon className="h-5 w-5 mt-0.5 text-gray-400 flex-shrink-0" />
+                <Map className="h-5 w-5 mt-0.5 text-gray-400 flex-shrink-0" />
                 <span className="text-gray-300 text-sm sm:text-base">
                   Jl. Layar Raya 2A Kelapa Dua, Karawaci Tangerang
                 </span>
@@ -134,7 +134,7 @@ const Footer = () => {
               </li>
             </ul>
             <div className="flex items-center space-x-2 mt-3 bg-green-900/20 px-3 py-2 rounded-md">
-              <ClockIcon className="h-4 w-4 text-green-400" />
+              <Clock className="h-4 w-4 text-green-400" />
               <span className="text-green-400 text-sm font-medium">24/7 WhatsApp Support</span>
             </div>
           </div>
