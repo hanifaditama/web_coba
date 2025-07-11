@@ -92,7 +92,7 @@ const ArticleDetail = () => {
             <p className="mb-6">
               The next generation of MacBooks is set to revolutionize the way we think about portable computing. 
               With Apple's continued innovation in chip design and system architecture, we're seeing unprecedented 
-              leaps in performance and efficiency that were unimaginable just a few years ago.
+              leaps in performance and efficiency that were unimaginable.
             </p>
             
             <h2 className="text-2xl font-bold mt-8 mb-4">The Evolution of Apple Silicon</h2>
@@ -215,7 +215,6 @@ const ArticleDetail = () => {
             </p>
             
             <ul className="list-disc pl-6 mb-6 space-y-2">
-              <li>Enable "Low Power Mode" in System Preferences &gt; Battery</li>
               <li>Turn off keyboard backlighting when not needed</li>
               <li>Disable features like Handoff and AirDrop when not in use</li>
               <li>Manage Bluetooth devices (disconnect when not in use)</li>

@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
 
 const WhatsAppButton = () => {
-  const phoneNumber = "6281234567890"; // Replace with your WhatsApp number
-  const message = "Hi, I'm interested in selling my MacBook!"; // Default message
+  const phoneNumber = "628988030869"; // Replace with your WhatsApp number
+  const message = "Hi, saya tertarik untuk menjual Macbook saya!"; // Default message
   
   const handleWhatsAppClick = () => {
     const encodedMessage = encodeURIComponent(message);
