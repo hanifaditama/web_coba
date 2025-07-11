@@ -73,7 +73,7 @@ const ServicesSection = () => {
                 <Button 
                   className="w-full bg-white hover:bg-gray-50 text-primary border border-primary/20 hover:border-primary/40" 
                   variant="outline"
-                  onClick={() => scrollToSection('contact')}
+                  onClick={() => scrollToSection('contact-section')}
                 >
                   Konsultasi Gratis
                 </Button>

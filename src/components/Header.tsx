@@ -66,7 +66,7 @@ const Header = () => {
               onClick={() => scrollToSection('blog-section')}
               className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-primary transition-colors"
             >
-              Article
+              Artikel
             </button>
             <button 
               onClick={() => scrollToSection('faq')}
