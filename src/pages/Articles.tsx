@@ -4,7 +4,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ArticleCard from "@/components/ArticleCard";
 import Pagination from "@/components/Pagination";
-import { sampleArticles } from "@/models/Article";
+import { SanityArticle } from "@/models/Article";
+import { getAllPosts } from "@/lib/sanity";
 import { Button } from "@/components/ui/button";
 
 // Simple arrow icon to replace Lucide React icon
@@ -27,14 +28,32 @@ const ArrowLeft = () => (
 );
 
 const Articles = () => {
+  const [articles, setArticles] = useState<SanityArticle[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
+  const [isLoading, setIsLoading] = useState(true);
   const articlesPerPage = 4;
-  const totalPages = Math.ceil(sampleArticles.length / articlesPerPage);
   
+  useEffect(() => {
+    const fetchArticles = async () => {
+      try {
+        const posts = await getAllPosts();
+        setArticles(posts);
+      } catch (error) {
+        console.error("Error fetching articles:", error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchArticles();
+    setCurrentPage(1);
+  }, []);
+
   // Get current articles
   const indexOfLastArticle = currentPage * articlesPerPage;
   const indexOfFirstArticle = indexOfLastArticle - articlesPerPage;
-  const currentArticles = sampleArticles.slice(indexOfFirstArticle, indexOfLastArticle);
+  const currentArticles = articles.slice(indexOfFirstArticle, indexOfLastArticle);
+  const totalPages = Math.ceil(articles.length / articlesPerPage);
   
   // Change page
   const handlePageChange = (pageNumber: number) => {
@@ -42,11 +61,6 @@ const Articles = () => {
     // Scroll to top when page changes
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
-  
-  // Reset to page 1 when component mounts
-  useEffect(() => {
-    setCurrentPage(1);
-  }, []);
 
   // Navigate to home page
   const navigateToHome = () => {
@@ -77,19 +91,25 @@ const Articles = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {currentArticles.map((article) => (
-            <div key={article.id}>
-              <ArticleCard article={article} />
-            </div>
-          ))}
-        </div>
+        {isLoading ? (
+          <div className="text-center py-12">Loading articles...</div>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {currentArticles.map((article) => (
+              <div key={article._id}>
+                <ArticleCard article={article} />
+              </div>
+            ))}
+          </div>
+        )}
         
-        <Pagination 
-          currentPage={currentPage} 
-          totalPages={totalPages} 
-          onPageChange={handlePageChange} 
-        />
+        {!isLoading && totalPages > 1 && (
+          <Pagination 
+            currentPage={currentPage} 
+            totalPages={totalPages} 
+            onPageChange={handlePageChange} 
+          />
+        )}
       </main>
       
       <Footer />

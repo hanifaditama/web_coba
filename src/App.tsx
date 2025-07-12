@@ -12,8 +12,11 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 const Router = () => {
   const path = window.location.pathname;
   
-  // Check if the path matches /articles/:id pattern
-  const articleMatch = path.match(/^\/articles\/(\d+)$/);
+  // Check if the path matches /articles/:slug pattern (allow letters, numbers, hyphens)
+  const articleMatch = path.match(/^\/articles\/([\w-]+)$/);
+  
+  console.log('Current path:', path);
+  console.log('Article match:', articleMatch);
   
   if (path === "/") {
     return <Index />;

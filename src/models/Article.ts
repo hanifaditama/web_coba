@@ -1,3 +1,7 @@
+import { SanityImageSource } from '@sanity/image-url/lib/types/types';
+import { PortableTextBlock } from '@portabletext/types';
+
+// Keep the original interface for backward compatibility
 export interface Article {
   id: number;
   title: string;
@@ -9,6 +13,22 @@ export interface Article {
   category: string;
 }
 
+// Add a new interface for Sanity data
+export interface SanityArticle {
+  _id: string;
+  title: string;
+  slug: {
+    current: string;
+  };
+  excerpt?: string;
+  mainImage: SanityImageSource;
+  author: string;
+  publishedAt: string;
+  category: string;
+  body?: PortableTextBlock[];
+}
+
+// Keep the sample articles for now (we'll remove them later)
 export const sampleArticles: Article[] = [
   {
     id: 1,
